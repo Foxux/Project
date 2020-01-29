@@ -5,6 +5,12 @@ console.log("Здравствуйте! Данный код осущетсвля�
 function testPrimer(){
  
 
+  function drowRect(x = [], y, symbol) {
+    x.forEach(function() {
+      console.log( x);
+    });
+    
+  }
 
 
   r1.question("Введите количество строк от 2 до 5 \n",(answer)=>{
@@ -20,7 +26,7 @@ function testPrimer(){
     }
   
     else{
-      ac();
+      
       r1.question("Хорошо, введите количество столбцов от 2 до 5 \n",(answer2)=>{
         b = answer2;
         if ( b > 5, a != b ){
@@ -36,15 +42,16 @@ function testPrimer(){
                   c = answer3;
                   
                   if ( c == "@" ){
-                    
-                    
-                    
+                    console.log("ok", a, b, c);
+                    drowRect(a, b, c);
                   }
                     else if( c == "#" ){
-                      console.log("ok!");
+                      console.log("ok", a, b, c);
+                      drowRect(a, b, c);
                     }
                     else if( c== "%" ){
-                      console.log("ok!!");
+                      console.log("ok", a, b, c);
+                      drowRect(a, b, c);
                     }
                     else {
                       console.log(`Вы ввели неверный символ, введите параметры квадрата с начала. Будьте внимательней пожалуйста! \n`);
