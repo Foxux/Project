@@ -5,12 +5,19 @@ console.log("Здравствуйте! Данный код осущетсвля�
 function testPrimer(){
  
 
-  function drowRect(x = [], y, symbol) {
-    x.forEach(function() {
-      console.log( x);
-    });
-    
+  function drowRect(a, b, c) {
+    console.log("Ваша фигура ");
+    for(var i=0;i<a;i++){
+      let r ='';
+      for(var j=0;j<b;j++){
+        r += ' ' + c;
+      }
+      
+       console.log(r);
+       r1.close();
+    }
   }
+ 
 
 
   r1.question("Введите количество строк от 2 до 5 \n",(answer)=>{
@@ -42,15 +49,15 @@ function testPrimer(){
                   c = answer3;
                   
                   if ( c == "@" ){
-                    console.log("ok", a, b, c);
+                
                     drowRect(a, b, c);
                   }
                     else if( c == "#" ){
-                      console.log("ok", a, b, c);
+                      
                       drowRect(a, b, c);
                     }
                     else if( c== "%" ){
-                      console.log("ok", a, b, c);
+                      
                       drowRect(a, b, c);
                     }
                     else {
